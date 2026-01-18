@@ -1,0 +1,5 @@
+add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/linked_list)
+add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/linked_list_cpp)
+add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/ring_buffer)
+add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/ring_buffer_cpp)
+add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/freelist)
