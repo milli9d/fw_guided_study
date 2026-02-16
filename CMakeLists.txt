@@ -1,8 +1,8 @@
 # set the minimum version of CMake
 cmake_minimum_required(VERSION 3.30.1)
 
-set(CMAKE_C_COMPILER "/opt/homebrew/opt/llvm/bin/clang")
-set(CMAKE_CXX_COMPILER "/opt/homebrew/opt/llvm/bin/clang++")
+# set(CMAKE_C_COMPILER "/opt/homebrew/opt/llvm/bin/clang")
+# set(CMAKE_CXX_COMPILER "/opt/homebrew/opt/llvm/bin/clang++")
 
 # Use system ar instead of LLVM ar to avoid archive corruption
 set(CMAKE_AR "/usr/bin/ar")
@@ -34,4 +34,6 @@ set(CMAKE_C_FLAGS "-g -Ofast -Wall -Wextra -Wunused")
 # add all the subdirectories
 add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/lib/logging)
 add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/00_start_here)
+add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/01_memory)
+
 

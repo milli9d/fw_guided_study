@@ -12,11 +12,11 @@ typedef struct {
     size_t sz;
     size_t blk_sz;
     /* Frequency tracking for analysis */
-    uint8_t** all_blocks;      /* Array of all block pointers */
-    uint32_t* alloc_count;     /* Alloc count per block */
-    uint32_t* free_count;      /* Free count per block */
-    size_t num_blocks;         /* Total number of blocks */
-    uint32_t max_alloc;        /* Max alloc count for bar scaling */
+    uint8_t** all_blocks;  /* Array of all block pointers */
+    uint32_t* alloc_count; /* Alloc count per block */
+    uint32_t* free_count;  /* Free count per block */
+    size_t num_blocks;     /* Total number of blocks */
+    uint32_t max_alloc;    /* Max alloc count for bar scaling */
 } freelist_t;
 
 int32_t freelist_reset(freelist_t* list);
